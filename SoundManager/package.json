@@ -1,0 +1,20 @@
+{
+  "name": "com.anormalityteam.soundmanager",
+  "version": "0.1.0",
+  "displayName": "Sound Manager",
+  "description": "This is a package which adds a sound manager script with audio source functions and group separation. Credit to Ramon A.V. for initial implementation.",
+  "unity": "6000.0",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://example.com/licensing.html",
+  "keywords": [
+    "keyword1",
+    "keyword2",
+    "keyword3"
+  ],
+  "author": {
+    "name": "Evan Kohler",
+    "email": "evank@metropolia.fi",
+    "url": "https://github.com/MonoDefine"
+  }
+}
