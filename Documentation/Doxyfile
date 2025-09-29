@@ -32,7 +32,7 @@ PROJECT_NAME           = "Sound Manager"
 # This could be handy for archiving the generated documentation or 
 # if some version control system is used.
 
-PROJECT_NUMBER         = 0.1.0 
+PROJECT_NUMBER         = 0.1.2 
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description 
 # for a project that appears at the top of each page and should give viewer 
@@ -52,7 +52,7 @@ PROJECT_LOGO           =
 # If a relative path is entered, it will be relative to the location 
 # where doxygen was started. If left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       = "C:/Users/eppuk/OneDrive/Documents/0utputDirectory" 
+OUTPUT_DIRECTORY       = "E:/Unity_Games/PackageTesting/Packages/sound-manager/Documentation" 
 
 # If the CREATE_SUBDIRS tag is set to YES, then doxygen will create 
 # 4096 sub-directories (in 2 levels) under the output directory of each output 
@@ -616,7 +616,7 @@ WARN_LOGFILE           =
 # directories like "/usr/src/myproject". Separate the files or directories 
 # with spaces.
 
-INPUT                  = "E:\Unity_Games\AnormalityDemo\Anormality\Anormality\Packages\SoundManager" 
+INPUT                  = "E:/Unity_Games/PackageTesting/Packages/sound-manager" 
 
 # This tag can be used to specify the character encoding of the source files 
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding, which is 
@@ -891,7 +891,7 @@ HTML_STYLESHEET        =
 
 HTML_EXTRA_FILES       = 
 
-HTML_EXTRA_STYLESHEET  = "C:/Users/eppuk/OneDrive/Documents/0utputDirectory/html/doxygen-awesome.css" "C:/Users/eppuk/OneDrive/Documents/0utputDirectory/html/doxygen-awesome-sidebar-only.css" 
+HTML_EXTRA_STYLESHEET  = "E:/Unity_Games/PackageTesting/Packages/sound-manager/Documentation/html/doxygen-awesome.css" "E:/Unity_Games/PackageTesting/Packages/sound-manager/Documentation/html/doxygen-awesome-sidebar-only.css" 
 
 # The HTML_COLORSTYLE_HUE tag controls the color of the HTML output. 
 # Doxygen will adjust the colors in the stylesheet and background images 

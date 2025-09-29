@@ -28,7 +28,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Sound Manager<span id="projectnumber">&#160;0.1.0</span>
+   <div id="projectname">Sound Manager<span id="projectnumber">&#160;0.1.2</span>
    </div>
   </td>
  </tr>
@@ -121,11 +121,14 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:acbce7c425c3c78c428c285aa25c0dd74" id="r_acbce7c425c3c78c428c285aa25c0dd74"><td class="memItemLeft" align="right" valign="top">AudioMixer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbce7c425c3c78c428c285aa25c0dd74">mixer</a></td></tr>
+<tr class="memdesc:acbce7c425c3c78c428c285aa25c0dd74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game Audio Mixer.  <br /></td></tr>
 <tr class="memitem:a3c40ed5f4e05486588a7ed1606898d35" id="r_a3c40ed5f4e05486588a7ed1606898d35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_audio_setting.html">AudioSetting</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c40ed5f4e05486588a7ed1606898d35">audioSettings</a></td></tr>
+<tr class="memdesc:a3c40ed5f4e05486588a7ed1606898d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio Settings.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a4ceb176bb67059b35136a96fd9221824" id="r_a4ceb176bb67059b35136a96fd9221824"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_sound_manager.html">SoundManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ceb176bb67059b35136a96fd9221824">Instance</a></td></tr>
+<tr class="memdesc:a4ceb176bb67059b35136a96fd9221824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instance of <a class="el" href="class_sound_manager.html">SoundManager</a> object.  <br /></td></tr>
 </table>
 <a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Member Enumeration Documentation</h2>
 <a id="ad6339c9df0a5e6efe7743c00e09e88ad" name="ad6339c9df0a5e6efe7743c00e09e88ad"></a>
@@ -139,10 +142,14 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Array of Enums used to seperate audio into different channels </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad6339c9df0a5e6efe7743c00e09e88adaf03bde11d261f185cbacfa32c1c6538c" name="ad6339c9df0a5e6efe7743c00e09e88adaf03bde11d261f185cbacfa32c1c6538c"></a>Master&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad6339c9df0a5e6efe7743c00e09e88ada47dcbd834e669233d7eb8a51456ed217" name="ad6339c9df0a5e6efe7743c00e09e88ada47dcbd834e669233d7eb8a51456ed217"></a>Music&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad6339c9df0a5e6efe7743c00e09e88ada8e74cb085887902ba25fcf109de2f7a3" name="ad6339c9df0a5e6efe7743c00e09e88ada8e74cb085887902ba25fcf109de2f7a3"></a>Sfx&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad6339c9df0a5e6efe7743c00e09e88adaf03bde11d261f185cbacfa32c1c6538c" name="ad6339c9df0a5e6efe7743c00e09e88adaf03bde11d261f185cbacfa32c1c6538c"></a>Master&#160;</td><td class="fielddoc"><p>main game audio </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad6339c9df0a5e6efe7743c00e09e88ada47dcbd834e669233d7eb8a51456ed217" name="ad6339c9df0a5e6efe7743c00e09e88ada47dcbd834e669233d7eb8a51456ed217"></a>Music&#160;</td><td class="fielddoc"><p>music audio </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad6339c9df0a5e6efe7743c00e09e88ada8e74cb085887902ba25fcf109de2f7a3" name="ad6339c9df0a5e6efe7743c00e09e88ada8e74cb085887902ba25fcf109de2f7a3"></a>Sfx&#160;</td><td class="fielddoc"><p>sound effect audio </p>
+</td></tr>
 </table>
 
 </div>
@@ -162,6 +169,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Pauses all game audio </p>
 
 </div>
 </div>
@@ -183,6 +191,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Plays sound if is present in the AudioClips array </p>
 
 </div>
 </div>
@@ -204,6 +213,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Plays sound if is present in the AudioClips array </p>
 
 </div>
 </div>
@@ -221,6 +231,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Resumes all game audio </p>
 
 </div>
 </div>
@@ -238,6 +249,12 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Sets volume of Master mixer </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>float for setting mixer volume </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -255,6 +272,12 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Sets volume of Music mixer </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>float for setting mixer volume </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -272,6 +295,12 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Sets volume of Sound Effect mixer </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>float for setting mixer volume </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -289,6 +318,7 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Stops a currently playing loop </p>
 
 </div>
 </div>
@@ -304,6 +334,8 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Audio Settings. </p>
 
 </div>
 </div>
@@ -327,6 +359,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Instance of <a class="el" href="class_sound_manager.html">SoundManager</a> object. </p>
+
 </div>
 </div>
 <a id="acbce7c425c3c78c428c285aa25c0dd74" name="acbce7c425c3c78c428c285aa25c0dd74"></a>
@@ -341,10 +375,12 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Game Audio Mixer. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/Unity_Games/AnormalityDemo/Anormality/Anormality/Packages/SoundManager/Runtime/<a class="el" href="_sound_manager_8cs.html">SoundManager.cs</a></li>
+<li>E:/Unity_Games/PackageTesting/Packages/sound-manager/Runtime/<a class="el" href="_sound_manager_8cs.html">SoundManager.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

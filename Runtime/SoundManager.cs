@@ -5,20 +5,25 @@ using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
+	//! Instance of SoundManager object
 	public static SoundManager Instance;
+
+	//! Game Audio Mixer
 	public AudioMixer mixer;
 
+	/*! Array of Enums used to seperate audio into different channels*/
 	public enum AudioGroups : byte
 	{
-		Master,
-		Music,
-		Sfx
-	}
-
-	public AudioSetting[] audioSettings;
-
-	[SerializeField] private AudioClip[] audioClips;
-	List<AudioSource> sounds = new List<AudioSource>();
+		Master, /*!< main game audio*/ 
+		Music, /*!< music audio*/
+        Sfx /*!< sound effect audio*/
+    }
+    //! Audio Settings
+    public AudioSetting[] audioSettings; 
+    //! Array of audio clips played in the game
+    [SerializeField] private AudioClip[] audioClips;
+    //! List?
+    List<AudioSource> sounds = new List<AudioSource>();
 
 	void Awake()
 	{
@@ -29,6 +34,7 @@ public class SoundManager : MonoBehaviour
 		Instance = this;
 	}
 
+	/*! Plays sound if is present in the AudioClips array*/
     public void PlaySound(AudioSource source, string clipName)
 	{
 		foreach (AudioClip clip in audioClips)
@@ -41,7 +47,10 @@ public class SoundManager : MonoBehaviour
 		}
 	}
 
-	public void PlayLoop(AudioSource audiosource, string clipName)
+    /*! Loops sound if it is present in AudioClips array
+     
+     Mostly used for music*/
+    public void PlayLoop(AudioSource audiosource, string clipName)
 	{
 		foreach (AudioClip clip in audioClips)
 		{
@@ -56,13 +65,15 @@ public class SoundManager : MonoBehaviour
 		}
 	}
 
-	public void StopLoop(AudioSource audiosource)
+    /*! Stops a currently playing loop*/
+    public void StopLoop(AudioSource audiosource)
 	{
 		audiosource.Stop();
 		audiosource.clip = null;
 	}
 
-	public void PauseAllSounds()
+    /*! Pauses all game audio*/
+    public void PauseAllSounds()
 	{
 		sounds.AddRange(FindObjectsByType<AudioSource>(FindObjectsSortMode.None));  //AddRange adds all at once, so foreach not necessary
 		foreach (AudioSource audio in sounds)
@@ -70,6 +81,7 @@ public class SoundManager : MonoBehaviour
 					audio.Pause();
 	}
 
+	/*! Resumes all game audio*/
 	public void ResumeAllSounds()
 	{
 		foreach (AudioSource audio in sounds)
@@ -79,17 +91,23 @@ public class SoundManager : MonoBehaviour
 		}
 	}
 
-	public void SetMasterVolume(float volume)
+    //! Sets volume of Master mixer
+    //! \param value: float for setting mixer volume
+    public void SetMasterVolume(float volume)
 	{
 		audioSettings[(int)AudioGroups.Master].SetExposedParam(volume);
 	}
 
-	public void SetSfxVolume(float volume)
+    //! Sets volume of Sound Effect mixer
+    //! \param value: float for setting mixer volume
+    public void SetSfxVolume(float volume)
 	{
 		audioSettings[(int)AudioGroups.Sfx].SetExposedParam(volume);
 	}
 
-	public void SetMusicVolume(float volume)
+    //! Sets volume of Music mixer
+    //! \param value: float for setting mixer volume
+    public void SetMusicVolume(float volume)
 	{
 		audioSettings[(int)AudioGroups.Music].SetExposedParam(volume);
 	}
@@ -97,10 +115,15 @@ public class SoundManager : MonoBehaviour
 }
 
 [System.Serializable]
+
+
+/*!The AudioSetting class */
 public class AudioSetting
 {
+	//! Slider object for mixer volume
 	public Slider slider;
-	public SoundManager.AudioGroups group;
+    //! Enum list from AudioGroups class
+    public SoundManager.AudioGroups group; 
 
 	public void Initialize()
 	{
@@ -116,10 +139,11 @@ public class AudioSetting
 		float savedValue = PlayerPrefs.GetFloat(param, 0.75f);
 		slider.value = savedValue;
 	}
-
+	//! Changes the volume of an exposed audio mixer
+	//! \param value: float for setting mixer volume
 	public void SetExposedParam(float value)
 	{
-		// this one too
+		// this one too (we still doing this?) - Evan
         string param = group switch
         {
             SoundManager.AudioGroups.Master => "masterVol",
