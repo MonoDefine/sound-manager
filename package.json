@@ -1,8 +1,8 @@
 {
-  "name": "com.anormalityteam.soundmanager",
-  "version": "0.1.0",
-  "displayName": "Sound Manager",
-  "description": "This is a package which adds a sound manager script with audio source functions and group separation. Credit to Ramon A.V. for initial implementation.",
+  "name": "com.anormalityteam.sound-menu-manager",
+  "version": "0.2.0",
+  "displayName": "Sound Manager and Menu System",
+  "description": "This is a package which adds a sound manager script with audio source functions and group separation. Credit to Ramon A.V. for initial implementation.\nMenu system added as it has sound manager as a dependency.",
   "unity": "6000.0",
   "documentationUrl": "https://example.com/",
   "changelogUrl": "https://example.com/changelog.html",
