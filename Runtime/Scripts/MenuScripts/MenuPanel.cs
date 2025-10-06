@@ -42,21 +42,22 @@ public class MenuPanel : MonoBehaviour
 
     }
 
+    //! Opens the main game scene
     private void OpenGame()
     {
-        SceneManager.LoadScene((int)AnormalityScene.LiveGame);
-        //SceneManager.LoadScene((int)AnormalityScene.GameOverTest);
+        SceneManager.LoadScene((int)GameScene.LiveGame);
     }
+    //! Enables settings panel
     private void ShowSettingsPanel()
     {
         settingsPanel.SetActive(true);
     }
-
+    //! Closes the game application
     private void ExitGame()
     {
         Application.Quit();
     }
-
+    //! Toggles the credits panel on and off
     private void ToggleCreditsPanel()
     {
         creditsActive = !creditsActive;

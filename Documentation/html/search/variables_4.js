@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['slider_0',['slider',['../class_audio_setting.html#a3f4df5e50c945edc02906cbb7754c1d5',1,'AudioSetting']]]
+  ['mixer_0',['mixer',['../class_sound_manager.html#acbce7c425c3c78c428c285aa25c0dd74',1,'SoundManager']]]
 ];

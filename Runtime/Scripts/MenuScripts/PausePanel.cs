@@ -49,7 +49,8 @@ public class PausePanel : MonoBehaviour
         settingsButton.onClick.AddListener(() => ShowSettingsPanel());
         returnButton.onClick.AddListener(() => ReturnToMain());
     }
-    public void ToggleTime() // new toggle function for time handlin' - Evan
+    //! Toggles between stopping and starting time for pause functionality
+    public void ToggleTime()
     {
         float timeScale = !timePaused ? 0.0f : 1.0f;
         timePaused = !timePaused;
@@ -87,17 +88,20 @@ public class PausePanel : MonoBehaviour
         }
     }
 
+    //! Displays Settings Panel
     private void ShowSettingsPanel()
     {
         settingsPanel.SetActive(true);
     }
 
+    //! Displays Credits Panel
     public void ShowCreditsPanel()
     {
         ResumeGame();
         creditPanel.SetActive(true);
     }
 
+    //! Displays 'Are you sure?' panel
     private void ReturnToMain() // function to return to main menu
     {
         confirmPanel.SetActive(true);

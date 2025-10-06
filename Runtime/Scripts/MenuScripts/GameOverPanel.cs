@@ -17,12 +17,12 @@ public class GameOverPanel : MonoBehaviour
 
     private void RetryGame()
     {
-        SceneManager.LoadScene((int)AnormalityScene.LiveGame);
+        SceneManager.LoadScene((int)GameScene.LiveGame);
         // SceneManager.LoadScene((int)AnormalityScene.GameOverTest);
     }
 
     private void ExitToMainMenu()
     {
-        SceneManager.LoadScene((int)AnormalityScene.MainMenu);
+        SceneManager.LoadScene((int)GameScene.MainMenu);
     }
 }

@@ -24,7 +24,7 @@ public class ConfirmPanel : MonoBehaviour
     private void GoToMainMenu()
     {
         PausePanel.instance.ToggleTime();
-        SceneManager.LoadScene((int)AnormalityScene.MainMenu);
+        SceneManager.LoadScene((int)GameScene.MainMenu);
     }
 
     private void CloseConfirmPanel()

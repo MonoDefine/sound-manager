@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class SettingPanel : MonoBehaviour
+
 {
     [SerializeField] Button noButton;
 
@@ -14,4 +15,4 @@ public class SettingPanel : MonoBehaviour
     {
         this.gameObject.SetActive(false);
     }
-}
+};

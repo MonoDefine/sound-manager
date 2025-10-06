@@ -14,6 +14,6 @@ public class CreditsPanel : MonoBehaviour
     private void GoToMainMenu()
     {
         PausePanel.instance.ToggleTime();
-        SceneManager.LoadScene((int)AnormalityScene.MainMenu);
+        SceneManager.LoadScene((int)GameScene.MainMenu);
     }
 }
