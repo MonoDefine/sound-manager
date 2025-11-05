@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Sound + Menu Manager", "index.html", [
+  [ "Sound Manager", "index.html", [
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -37,18 +37,14 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Enumerations", "globals_enum.html", null ]
-      ] ]
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"_confirm_panel_8cs.html"
+"_sound_manager_8cs.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

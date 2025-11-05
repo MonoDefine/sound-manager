@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['gameover_0',['GameOver',['../_scene_transition_8cs.html#a06d6606b6fbcf7432eceb2fe25f4615da8f347bc7cebca9fa6d97e70c6bc29eb3',1,'SceneTransition.cs']]],
-  ['gameovertest_1',['GameOverTest',['../_scene_transition_8cs.html#a06d6606b6fbcf7432eceb2fe25f4615da9da4b328ef4d509debd39bd8ec2fad33',1,'SceneTransition.cs']]]
+  ['master_0',['Master',['../class_sound_manager.html#ad6339c9df0a5e6efe7743c00e09e88adaf03bde11d261f185cbacfa32c1c6538c',1,'SoundManager']]],
+  ['music_1',['Music',['../class_sound_manager.html#ad6339c9df0a5e6efe7743c00e09e88ada47dcbd834e669233d7eb8a51456ed217',1,'SoundManager']]]
 ];

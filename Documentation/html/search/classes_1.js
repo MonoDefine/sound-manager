@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['confirmpanel_0',['ConfirmPanel',['../class_confirm_panel.html',1,'']]],
-  ['creditspanel_1',['CreditsPanel',['../class_credits_panel.html',1,'']]]
+  ['soundmanager_0',['SoundManager',['../class_sound_manager.html',1,'']]]
 ];

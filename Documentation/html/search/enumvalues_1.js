@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['livegame_0',['LiveGame',['../_scene_transition_8cs.html#a06d6606b6fbcf7432eceb2fe25f4615dae2d5097b4262f12e40d7df222354fdcd',1,'SceneTransition.cs']]]
+  ['sfx_0',['Sfx',['../class_sound_manager.html#ad6339c9df0a5e6efe7743c00e09e88ada8e74cb085887902ba25fcf109de2f7a3',1,'SoundManager']]]
 ];
