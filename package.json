@@ -1,6 +1,6 @@
 {
   "name": "com.monodefine.sound-manager",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "displayName": "Sound Manager",
   "description": "This is a package which adds a sound manager script with audio source functions and group separation. Credit to Ramon A.V. for initial implementation.",
   "unity": "6000.0",
